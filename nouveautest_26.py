@@ -62,9 +62,9 @@ def balle_deplacement(x, y):
     """déplacement avec les touches de directions"""
 
     if (x < 120) :
-            x = x + 3
+            balle_x = x + 3
     if (x > 0) :
-            x = x - 3
+            balle_x = x - 3
 
     return x, y
 
