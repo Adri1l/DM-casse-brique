@@ -58,14 +58,12 @@ ennemis_liste = []
 
 
 
-def vaisseau_deplacement(x, y):
+def balle_deplacement(x, y):
     """déplacement avec les touches de directions"""
 
-    if pyxel.btn(pyxel.KEY_RIGHT):
-        if (x < 120) :
+    if (x < 120) :
             x = x + 3
-    if pyxel.btn(pyxel.KEY_LEFT):
-        if (x > 0) :
+    if (x > 0) :
             x = x - 3
 
     return x, y
@@ -135,7 +133,8 @@ def update():
     # mise à jour de la position du vaisseau
     vaisseau_x, vaisseau_y = vaisseau_deplacement(vaisseau_x, vaisseau_y)
     
-   
+    # mise à jour de la position de la balle
+    balle_x,balle_y = balle_deplacement(balle_x, balle_y)
 
     # creation des tirs en fonction de la position du vaisseau
     tirs_liste = tirs_creation(vaisseau_x, vaisseau_y, tirs_liste)
