@@ -1,6 +1,3 @@
-
-
-
 # on rajoute random
 import pyxel, random
 
@@ -139,6 +136,8 @@ def draw():
 
     # vaisseau (carre 8x8)
     pyxel.rect(vaisseau_x, vaisseau_y, 25, 8, 1)
+    pyxel.tri(vaisseau_x +24, vaisseau_y, vaisseau_x +24, vaisseau_y + 7, vaisseau_x +24 + 7, vaisseau_y + 7,1)
+    pyxel.tri(vaisseau_x , vaisseau_y, vaisseau_x , vaisseau_y + 7, vaisseau_x -7, vaisseau_y + 7,1)
 
     # tirs
     for tir in tirs_liste:
@@ -178,5 +177,3 @@ def draw():
 
 
 pyxel.run(update, draw)
-
-
