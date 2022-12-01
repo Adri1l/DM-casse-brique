@@ -10,6 +10,9 @@ pyxel.init(128, 128, title="Nuit du c0de")
 vaisseau_x = 55
 vaisseau_y = 110
 
+balle_x = 60
+balle_y = 60
+
 #bloc 1e ligne
 bloc_x = 0
 bloc_x2 = 10
@@ -51,6 +54,25 @@ tirs_liste = []
 
 # initialisation des ennemis
 ennemis_liste = []
+
+
+
+
+def vaisseau_deplacement(x, y):
+    """déplacement avec les touches de directions"""
+
+    if pyxel.btn(pyxel.KEY_RIGHT):
+        if (x < 120) :
+            x = x + 3
+    if pyxel.btn(pyxel.KEY_LEFT):
+        if (x > 0) :
+            x = x - 3
+
+    return x, y
+
+
+
+
 
 
 def vaisseau_deplacement(x, y):
@@ -138,6 +160,10 @@ def draw():
     pyxel.rect(vaisseau_x, vaisseau_y, 25, 8, 1)
     pyxel.tri(vaisseau_x +24, vaisseau_y, vaisseau_x +24, vaisseau_y + 7, vaisseau_x +24 + 7, vaisseau_y + 7,1)
     pyxel.tri(vaisseau_x , vaisseau_y, vaisseau_x , vaisseau_y + 7, vaisseau_x -7, vaisseau_y + 7,1)
+
+    #balle
+    pyxel.circ(balle_x, balle_y,5,1)
+
 
     # tirs
     for tir in tirs_liste:
