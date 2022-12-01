@@ -1,4 +1,6 @@
 
+
+
 # on rajoute random
 import pyxel, random
 
