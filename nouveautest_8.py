@@ -136,7 +136,7 @@ def draw():
 
     # vaisseau (carre 8x8)
     pyxel.rect(vaisseau_x, vaisseau_y, 25, 8, 1)
-    pyxel.tri(vaisseau_x +32, vaisseau_y, vaisseau_x +32, vaisseau_y + 16, vaisseau_x +32 + 16, vaisseau_y + 16,1)
+    pyxel.tri(vaisseau_x +32, vaisseau_y, vaisseau_x +32, vaisseau_y + 8, vaisseau_x +32 + 8, vaisseau_y + 8,1)
 
     # tirs
     for tir in tirs_liste:
