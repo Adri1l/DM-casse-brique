@@ -162,7 +162,7 @@ def draw():
     pyxel.tri(vaisseau_x , vaisseau_y, vaisseau_x , vaisseau_y + 7, vaisseau_x -7, vaisseau_y + 7,1)
 
     #balle
-    pyxel.circ(balle_x, balle_y,5,1)
+    pyxel.circ(balle_x, balle_y,3,1)
 
 
     # tirs
