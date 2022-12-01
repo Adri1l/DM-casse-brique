@@ -60,11 +60,11 @@ ennemis_liste = []
 
 def balle_deplacement(x, y):
     """déplacement avec les touches de directions"""
-    if balle_x < 120
-    balle_x = balle_x + 3
+    if balle_x < 120:
+        balle_x = balle_x + 3
 
-    if balle_y < 120
-    balle_y = balle_y - 3
+    if balle_y < 120:
+        balle_y = balle_y - 3
 
     return balle_x, balle_y
 
