@@ -134,6 +134,8 @@ def update():
 
     # mise à jour de la position du vaisseau
     vaisseau_x, vaisseau_y = vaisseau_deplacement(vaisseau_x, vaisseau_y)
+    
+   
 
     # creation des tirs en fonction de la position du vaisseau
     tirs_liste = tirs_creation(vaisseau_x, vaisseau_y, tirs_liste)
