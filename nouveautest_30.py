@@ -66,7 +66,7 @@ def balle_deplacement(x, y):
     if balle_y < 120
     balle_y = balle_y - 3
 
-    return x, y
+    return balle_x, balle_y
 
 
 
