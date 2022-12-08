@@ -96,7 +96,7 @@ def draw():
         pyxel.tri(vaisseau_x , vaisseau_y, vaisseau_x , vaisseau_y + 7, vaisseau_x - 7, vaisseau_y + 7, 9)
 
     #balle 
-        pyxel.circ(balle_x, balle_y, 6, 9)
+        pyxel.circ(balle_x, balle_y, 1, 9)
 
         if balle_y == 25 and 128-13 <= balle_x <= 128-13+26 and vies_brique_1 > 0 :
             vies_brique_1 = vies_brique_1 - 1
