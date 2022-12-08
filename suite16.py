@@ -108,7 +108,7 @@ def draw():
 
     #lave
         pyxel.rect(0, 230, 256, 100, 8)
-        pyxel.text(100,250,"Ligne de lave de la mort",0)
+        pyxel.text(85,250,"Ligne de lave de la mort",0)
         #affichage brique
 
         if vies_brique_1 > 0 :
