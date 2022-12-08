@@ -45,7 +45,7 @@ def update():
         deplacement_horizontal =-3 #-1
 
 
-    if balle_x +6 <= 0 : 
+    if balle_x -6 <= 0 : 
         deplacement_horizontal = 2  #1 
 
     if balle_y +6 >= 230 :
@@ -55,7 +55,7 @@ def update():
         deplacement_horizontal = random.randint(-1,1)
 
 
-    if balle_y +6 <= 0 :
+    if balle_y -6 <= 0 :
         deplacement_vertical = 1 #1
 
     if vaisseau_y <= balle_y +6 <= vaisseau_y + 40 and vaisseau_x <= balle_x <=vaisseau_x + 25 :
