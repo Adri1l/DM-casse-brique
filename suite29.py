@@ -121,7 +121,7 @@ def draw():
 
     if vies_brique_1 == 0 :
         pyxel.cls(0)
-        pyxel.text(100,115," └(=^‥^=)┐ BRAVO C'EST GAGNE ! ! !",9)
+        pyxel.text(90,115," └(=^‥^=)┐ BRAVO C'EST GAGNE ! ! !",9)
 ""
 
 
