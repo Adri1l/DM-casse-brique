@@ -117,11 +117,11 @@ def draw():
     #fin
     if vies == 0 :
         pyxel.cls(0)
-        pyxel.text(120,128,"PERDU", 9)
+        pyxel.text(120,128,"PERDU (✖╭╮✖)", 9)
 
     if vies_brique_1 == 0 :
         pyxel.cls(0)
-        pyxel.text(100,115,"BRAVO C'EST GAGNE ! ! !",9)
+        pyxel.text(100,115," └(=^‥^=)┐ BRAVO C'EST GAGNE ! ! !",9)
 ""
 
 
