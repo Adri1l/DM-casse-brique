@@ -107,7 +107,7 @@ def draw():
             deplacement_vertical = 1 #1
 
     #lave
-          pyxel.rect(0, 130, 256, 100, 8)
+        pyxel.rect(0, 130, 256, 100, 8)
 
         #affichage brique
 
