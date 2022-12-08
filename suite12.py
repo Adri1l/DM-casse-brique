@@ -106,7 +106,8 @@ def draw():
             vies_brique_1 = vies_brique_1 - 1
             deplacement_vertical = 1 #1
 
-
+    #lave
+          pyxel.rect(0, 130, 256, 100, 8)
 
         #affichage brique
 
