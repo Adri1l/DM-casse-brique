@@ -52,7 +52,7 @@ def update():
         vies = vies - 1
         balle_y = 110
         balle_x = 128
-        deplacement_horizontal = random.randint(-1,1)
+        deplacement_horizontal = random.randint(-4,4)
 
 
     if balle_y -6 <= 0 :
