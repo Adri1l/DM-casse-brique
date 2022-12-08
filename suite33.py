@@ -56,10 +56,10 @@ def update():
 
 
     if balle_y -6 <= 0 :
-        deplacement_vertical = 1 #1
+        deplacement_vertical = 1 
 
     if vaisseau_y <= balle_y +6 <= vaisseau_y  and vaisseau_x <= balle_x <=vaisseau_x + 25 :
-        deplacement_vertical = -3 #-1
+        deplacement_vertical = -3 
 
 
     if vaisseau_y <= balle_y +6 <= vaisseau_y   and vaisseau_x + 25 <= balle_x <=vaisseau_x + 25 + 16 :
@@ -96,10 +96,11 @@ def draw():
 
     #balle 
         pyxel.circ(balle_x, balle_y, 6, 9)
-
+    #plateau
+    
         if balle_y == 25 and 128-13 <= balle_x <= 128-13+26 and vies_brique_1 > 0 :
             vies_brique_1 = vies_brique_1 - 1
-            deplacement_vertical = -1 #-1
+            deplacement_vertical = 1 #-1
 
         elif balle_y == 25+17 and 128-13 < balle_x < 128-13+26 and vies_brique_1 > 0 :
             vies_brique_1 = vies_brique_1 - 1
@@ -108,7 +109,7 @@ def draw():
     #lave
         pyxel.rect(0, 230, 256, 100, 8)
         pyxel.text(85,250,"Ligne de lave de la mort",0)
-        #affichage brique
+    #affichage brique
 
         if vies_brique_1 > 0 :
             pyxel.rect(128-13, 25, 25, 17, 9)
