@@ -111,7 +111,7 @@ def draw():
         #affichage brique
 
         if vies_brique_1 > 0 :
-            pyxel.rect(128-13, 25, 25, 17, 6)
+            pyxel.rect(128-13, 25, 25, 17, 9)
 
 
     #fin
