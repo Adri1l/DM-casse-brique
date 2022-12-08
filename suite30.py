@@ -58,18 +58,18 @@ def update():
     if balle_y -6 <= 0 :
         deplacement_vertical = 1 #1
 
-    if vaisseau_y <= balle_y +6 <= vaisseau_y + 40 and vaisseau_x <= balle_x <=vaisseau_x + 25 :
+    if vaisseau_y <= balle_y +6 <= vaisseau_y  and vaisseau_x <= balle_x <=vaisseau_x + 25 :
         deplacement_vertical = -3 #-1
 
 
-    if vaisseau_y <= balle_y +6 <= vaisseau_y +40  and vaisseau_x + 25 <= balle_x <=vaisseau_x + 25 + 16 :
+    if vaisseau_y <= balle_y +6 <= vaisseau_y   and vaisseau_x + 25 <= balle_x <=vaisseau_x + 25 + 16 :
         deplacement_vertical = -3 
         if deplacement_horizontal == -2 or deplacement_horizontal == 0 :
             deplacement_horizontal = 1   
         if deplacement_horizontal == 1 :
             deplacement_horizontal == 1
 
-    if vaisseau_y <= balle_y +6 <= vaisseau_y + 40 and vaisseau_x - 25 <= balle_x <= vaisseau_x :
+    if vaisseau_y <= balle_y +6 <= vaisseau_y  and vaisseau_x - 25 <= balle_x <= vaisseau_x :
         deplacement_vertical = -1 
         if deplacement_horizontal == 1 or deplacement_horizontal == 0 :
             deplacement_horizontal = -1   
@@ -117,7 +117,7 @@ def draw():
     #fin
     if vies == 0 :
         pyxel.cls(0)
-        pyxel.text(120,128,"PERDU (✖╭╮✖)", 9)
+        pyxel.text(120,128,"PERDU (X _ X)", 9)
 
     if vies_brique_1 == 0 :
         pyxel.cls(0)
