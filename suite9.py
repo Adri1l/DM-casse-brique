@@ -87,16 +87,16 @@ def draw():
 
     if vies > 0 :
     # vide la fenetre
-        pyxel.cls(14)
+        pyxel.cls(0)
 
 
     # plateau 
-        pyxel.rect(vaisseau_x, vaisseau_y, 25, 8, 1)
-        pyxel.tri(vaisseau_x + 24, vaisseau_y, vaisseau_x + 24, vaisseau_y + 7, vaisseau_x + 24 + 7, vaisseau_y + 7, 1)
-        pyxel.tri(vaisseau_x , vaisseau_y, vaisseau_x , vaisseau_y + 7, vaisseau_x - 7, vaisseau_y + 7, 1)
+        pyxel.rect(vaisseau_x, vaisseau_y, 25, 8, 9)
+        pyxel.tri(vaisseau_x + 24, vaisseau_y, vaisseau_x + 24, vaisseau_y + 7, vaisseau_x + 24 + 7, vaisseau_y + 7, 9)
+        pyxel.tri(vaisseau_x , vaisseau_y, vaisseau_x , vaisseau_y + 7, vaisseau_x - 7, vaisseau_y + 7, 9)
 
     #balle 
-        pyxel.circ(balle_x, balle_y, 6, 5)
+        pyxel.circ(balle_x, balle_y, 6, 9)
 
         if balle_y == 25 and 128-13 <= balle_x <= 128-13+26 and vies_brique_1 > 0 :
             vies_brique_1 = vies_brique_1 - 1
