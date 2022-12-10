@@ -91,7 +91,7 @@ def draw():
 
     # plateau 
         pyxel.rect(vaisseau_x, vaisseau_y, 25, 8, 9)
-        pyxel.tri(vaisseau_x + 24, vaisseau_y, vaisseau_x + 24, vaisseau_y + 7, vaisseau_x + 24 + 7, vaisseau_y + 7, 9)
+        pyxel.tri(vaisseau_x + 24, vaisseau_y, vaisseau_x + 40, vaisseau_y + 15, vaisseau_x + 24 + 7, vaisseau_y + 7, 9)
         pyxel.tri(vaisseau_x , vaisseau_y, vaisseau_x , vaisseau_y + 7, vaisseau_x - 7, vaisseau_y + 7, 9)
 
     #balle 
@@ -130,7 +130,7 @@ def draw():
         if vies_brique_1 > 0 :
             pyxel.rect(128-13, 25, 25, 17, 9)
 
-        pyxel.tri(10, 10, 20, 20, 50, 50, 9)
+
  
 #fin
     if vies == 0 :
