@@ -130,8 +130,9 @@ def draw():
         if vies_brique_1 > 0 :
             pyxel.rect(128-13, 25, 25, 17, 9)
 
-        pyxel.tri(10, 10, 10, 10, 10, 10, 9)
-    #fin
+        pyxel.tri(60, 60, 60, 60, 60, 60, 9)
+ 
+#fin
     if vies == 0 :
         pyxel.cls(0)
         pyxel.text(100,128,"PERDU (X _ X)", 9)
