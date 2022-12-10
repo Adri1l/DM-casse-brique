@@ -74,7 +74,7 @@ def update():
         if deplacement_horizontal == 1 or deplacement_horizontal == 0 :
             deplacement_horizontal = -1   
         if deplacement_horizontal == -1 :
-            deplacement_horizontal == 1
+            deplacement_horizontal == -1
 
 # =========================================================
 # == DRAW
@@ -91,7 +91,7 @@ def draw():
 
     # plateau 
         pyxel.rect(vaisseau_x, vaisseau_y, 25, 8, 9)
-        pyxel.tri(vaisseau_x + 24, vaisseau_y, vaisseau_x + 40, vaisseau_y + 15, vaisseau_x + 24 + 7, vaisseau_y + 7, 9)
+        pyxel.tri(vaisseau_x + 24, vaisseau_y, vaisseau_x + 24, vaisseau_y + 7, vaisseau_x + 24 + 7, vaisseau_y + 7, 9)
         pyxel.tri(vaisseau_x , vaisseau_y, vaisseau_x , vaisseau_y + 7, vaisseau_x - 7, vaisseau_y + 7, 9)
 
     #balle 
