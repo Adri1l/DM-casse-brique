@@ -130,7 +130,7 @@ def draw():
             vies_brique_2 = vies_brique_2 - 1
             deplacement_vertical = 1 #-1
 
-        elif 25 + 17 <= balle_y <= 25+17+3 and 10 < balle_x < 10+26 and vies_brique_1 > 0 :
+        elif 25 + 17 <= balle_y <= 25+17+3 and 10 < balle_x < 10+26 and vies_brique_2 > 0 :
             vies_brique_2 = vies_brique_2 - 1
             deplacement_vertical = -1 #1
 
@@ -141,7 +141,7 @@ def draw():
             vies_brique_2 = vies_brique_2 - 1
             deplacement_vertical = 1 #-1
 
-        elif 25 <= balle_y <= 50 and 10 <= balle_x <= 10+1 and vies_brique_1 > 0 :
+        elif 25 <= balle_y <= 50 and 10 <= balle_x <= 10+1 and vies_brique_2 > 0 :
             vies_brique_2 = vies_brique_2 - 1
             deplacement_vertical = 1 #-1
 
