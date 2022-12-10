@@ -62,7 +62,7 @@ def update():
         deplacement_vertical = -3 
 
 
-    if vaisseau_y <= balle_y +6 <= vaisseau_y   and vaisseau_x + 25 <= balle_x <=vaisseau_x + 25 + 16 :
+    if vaisseau_y <= balle_y +6 <= vaisseau_y   and vaisseau_x + 24 <= balle_x <=vaisseau_x + 25 + 16 :
         deplacement_vertical = -3 
         if deplacement_horizontal == -2 or deplacement_horizontal == 0 :
             deplacement_horizontal = 1   
@@ -130,7 +130,7 @@ def draw():
         if vies_brique_1 > 0 :
             pyxel.rect(128-13, 25, 25, 17, 9)
 
-
+        pyxel.tri(1, 1, 1, 1, 1, 1, 9)
     #fin
     if vies == 0 :
         pyxel.cls(0)
