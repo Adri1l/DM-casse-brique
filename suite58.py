@@ -13,7 +13,7 @@ deplacement_horizontal = random.randint(-1,5)
 vies = 5
 vies_brique_1 = 1
 vies_brique_2 = 1
-
+vies_brique_3 = 1
 
 def plateau_deplacement(x, y):
     """déplacement avec les touches de directions"""
@@ -83,7 +83,7 @@ def update():
 def draw():
     """création des objets (30 fois par seconde)"""
 
-    global vaisseau_x, vaisseau_y, balle_y, balle_x, deplacement_vertical, vies, vies_brique_1, vies_brique_2, deplacement_horizontal
+    global vaisseau_x, vaisseau_y, balle_y, balle_x, deplacement_vertical, vies, vies_brique_1, vies_brique_2,vies_brique_3, deplacement_horizontal
 
     if vies > 0 :
     # vide la fenetre
@@ -144,6 +144,30 @@ def draw():
         elif 25 <= balle_y <= 50 and 10 <= balle_x <= 10+1 and vies_brique_2 > 0 :
             vies_brique_2 = vies_brique_2 - 1
             deplacement_vertical = 1 #-1
+            
+            
+    #brique_y3
+   
+    
+        if 25 <= balle_y <= 27 and 10+25+10 <= balle_x <= 10+25+10+26 and vies_brique_3 > 0 :
+            vies_brique_3 = vies_brique_3 - 1
+            deplacement_vertical = 1 #-1
+
+        elif 25 + 17 <= balle_y <= 25+17+3 and 10+25+10 < balle_x < 10+25+10+26 and vies_brique_3 > 0 :
+            vies_brique_3 = vies_brique_3 - 1
+            deplacement_vertical = -1 #1
+
+            
+    #brique_x3
+        
+        if 25 <= balle_y <= 50 and 10 <= balle_x <= 10+25+10+1 and vies_brique_3 > 0 :
+            vies_brique_3 = vies_brique_3 - 1
+            deplacement_vertical = 1 #-1
+
+        elif 25 <= balle_y <= 50 and 10+25+10 <= balle_x <= 10+25+10+1 and vies_brique_3 > 0 :
+            vies_brique_3 = vies_brique_3 - 1
+            deplacement_vertical = 1 #-1
+
 
     
     
@@ -158,7 +182,8 @@ def draw():
         if vies_brique_2 > 0 :
             pyxel.rect(10, 25, 25, 17, 9)
 
-
+        if vies_brique_3 > 0 :
+            pyxel.rect(10+25+10, 25, 25, 17, 9)
 
  
 #fin
@@ -166,9 +191,9 @@ def draw():
         pyxel.cls(0)
         pyxel.text(100,128,"PERDU (X _ X)", 9)
 
-    if vies_brique_1 == 0 and vies_brique_2 == 0:
+    if vies_brique_1 == 0 and vies_brique_2 == 0 and vies_brique_3 == 0:
         pyxel.cls(0)
-        pyxel.text(90,115," └(=^‥^=)┐ BRAVO C'EST GAGNE ! ! !",9)
+        pyxel.text(80,115," └(=^‥^=)┐ BRAVO C'EST GAGNE ! ! !",9)
 ""
 
 
