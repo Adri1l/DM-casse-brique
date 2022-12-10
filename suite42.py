@@ -98,7 +98,7 @@ def draw():
         pyxel.circ(balle_x, balle_y, 6, 9)
    
 
-    #brique
+    #brique_y
    
     
         if 25 <= balle_y <= 27 and 128-13 <= balle_x <= 128-13+26 and vies_brique_1 > 0 :
@@ -109,6 +109,19 @@ def draw():
             vies_brique_1 = vies_brique_1 - 1
             deplacement_vertical = -1 #1
 
+            
+    #brique_x
+        
+        if 25 <= balle_y <= 50 and 128-13 <= balle_x <= 128-13+1 and vies_brique_1 > 0 :
+            vies_brique_1 = vies_brique_1 - 1
+            deplacement_vertical = 1 #-1
+
+        elif 25 + 17 <= balle_y <= 25+17+3 and 128-13 < balle_x < 128-13+26 and vies_brique_1 > 0 :
+            vies_brique_1 = vies_brique_1 - 1
+            deplacement_vertical = -1 #1
+    
+    
+    
     #lave
         pyxel.rect(0, 230, 256, 100, 8)
         pyxel.text(85,250,"Ligne de lave de la mort",0)
