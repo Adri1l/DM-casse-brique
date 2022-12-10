@@ -130,7 +130,7 @@ def draw():
         if vies_brique_1 > 0 :
             pyxel.rect(128-13, 25, 25, 17, 9)
 
-        pyxel.tri(10, 10, 20, 20, 35, 35, 9)
+        pyxel.tri(10, 10, 20, 20, 50, 50, 9)
  
 #fin
     if vies == 0 :
