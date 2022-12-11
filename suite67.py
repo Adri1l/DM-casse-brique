@@ -213,6 +213,27 @@ def draw():
         elif 25 <= balle_y <= 50 and 10+25+10+25+10+25+10+25+10  <= balle_x <= 10+25+10+1+25+10+25+10+25+10  and vies_brique_5 > 0 :
             vies_brique_5 = vies_brique_5 - 1
             deplacement_vertical = 1 #-1
+    #brique_y6
+   
+    
+        if 25 <= balle_y <= 27 and 10+25+10+25+10+25+10+25+10+25+10 <= balle_x <= 10+25+10+25+10+26+25+10+25+10+25+10 and vies_brique_6 > 0 :
+            vies_brique_6 = vies_brique_6 - 1
+            deplacement_vertical = 1 #-1
+
+        elif 25 + 17 <= balle_y <= 25+17+3 and 10+25+10+25+10+25+10+25+10+25+10 < balle_x < 10+25+10+25+10+26+25+10+25+10+25+10  and vies_brique_6 > 0 :
+            vies_brique_6 = vies_brique_6 - 1
+            deplacement_vertical = -1 #1
+
+            
+    #brique_x6
+        
+        if 25 <= balle_y <= 50 and 10+25+10+25+10+25+10+25+10+25+10 <= balle_x <= 10+25+10+1+25+10+25+10+25+10+25+10  and vies_brique_6 > 0 :
+            vies_brique_6 = vies_brique_6 - 1
+            deplacement_vertical = 1 #-1
+
+        elif 25 <= balle_y <= 50 and 10+25+10+25+10+25+10+25+10+25+10  <= balle_x <= 10+25+10+1+25+10+25+10+25+10+25+10  and vies_brique_6 > 0 :
+            vies_brique_6 = vies_brique_6 - 1
+            deplacement_vertical = 1 #-1
 
     
     
@@ -246,7 +267,7 @@ def draw():
         pyxel.cls(0)
         pyxel.text(100,128,"PERDU (X _ X)", 9)
 
-    if vies_brique_1 == 0 and vies_brique_2 == 0 and vies_brique_3 == 0 and vies_brique_4 == 0 :
+    if vies_brique_1 == 0 and vies_brique_2 == 0 and vies_brique_3 == 0 and vies_brique_4 == 0 and vies_brique_5 == 0 and vies_brique_6 == 0 :
         pyxel.cls(0)
         pyxel.text(80,115," └(=^‥^=)┐ BRAVO C'EST GAGNE ! ! !",9)
 ""
