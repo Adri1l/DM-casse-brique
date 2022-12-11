@@ -15,6 +15,9 @@ vies_brique_1 = 1
 vies_brique_2 = 1
 vies_brique_3 = 1
 vies_brique_4 = 1
+vies_brique_5 = 1
+vies_brique_6 = 1
+vies_brique_7 = 1
 
 def plateau_deplacement(x, y):
     """déplacement avec les touches de directions"""
@@ -84,7 +87,7 @@ def update():
 def draw():
     """création des objets (30 fois par seconde)"""
 
-    global vaisseau_x, vaisseau_y, balle_y, balle_x, deplacement_vertical, vies, vies_brique_1, vies_brique_2,vies_brique_3,vies_brique_4, deplacement_horizontal
+    global vaisseau_x, vaisseau_y, balle_y, balle_x, deplacement_vertical, vies, vies_brique_1, vies_brique_2,vies_brique_3,vies_brique_4,vies_brique_5,vies_brique_6,vies_brique_7 deplacement_horizontal
 
     if vies > 0 :
     # vide la fenetre
@@ -210,7 +213,12 @@ def draw():
         
         if vies_brique_4 > 0 :
             pyxel.rect(10+25+10+25+10, 25, 25, 17, 9)
-
+        if vies_brique_5 > 0 :
+            pyxel.rect(10+25+10+25+10+25+10+25+10, 25, 25, 17, 9)
+        if vies_brique_6 > 0 :
+            pyxel.rect(10+25+10+25+10+25+10+25+10+25+10, 25, 25, 17, 9)
+        if vies_brique_7 > 0 :
+            pyxel.rect(10+25+10+25+10+25+10+25+10+25+10+25+10, 25, 25, 17, 9)
 
  
 #fin
