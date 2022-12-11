@@ -87,7 +87,7 @@ def update():
 def draw():
     """création des objets (30 fois par seconde)"""
 
-    global vaisseau_x, vaisseau_y, balle_y, balle_x, deplacement_vertical, vies, vies_brique_1, vies_brique_2,vies_brique_3,vies_brique_4,vies_brique_5,vies_brique_6,vies_brique_7 deplacement_horizontal
+    global vaisseau_x, vaisseau_y, balle_y, balle_x, deplacement_vertical, vies, vies_brique_1, vies_brique_2,vies_brique_3,vies_brique_4,vies_brique_5,vies_brique_6,vies_brique_7, deplacement_horizontal
 
     if vies > 0 :
     # vide la fenetre
