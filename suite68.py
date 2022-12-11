@@ -12,12 +12,12 @@ deplacement_vertical = 3
 deplacement_horizontal = random.randint(-1,5)
 vies = 5
 vies_brique_1 = 1
-vies_brique_2 = 1
-vies_brique_3 = 1
+vies_brique_2 = 2
+vies_brique_3 = 3
 vies_brique_4 = 1
 vies_brique_5 = 1
-vies_brique_6 = 1
-vies_brique_7 = 1
+vies_brique_6 = 2
+vies_brique_7 = 3
 
 def plateau_deplacement(x, y):
     """déplacement avec les touches de directions"""
@@ -268,10 +268,10 @@ def draw():
             pyxel.rect(128-13, 25, 25, 17, 9)
             
         if vies_brique_2 > 0 :
-            pyxel.rect(10, 25, 25, 17, 9)
+            pyxel.rect(10, 25, 25, 17, 10)
 
         if vies_brique_3 > 0 :
-            pyxel.rect(10+25+10, 25, 25, 17, 9)
+            pyxel.rect(10+25+10, 25, 25, 17, 8)
             
         
         if vies_brique_4 > 0 :
@@ -279,9 +279,9 @@ def draw():
         if vies_brique_5 > 0 :
             pyxel.rect(10+25+10+25+10+25+10+25+10, 25, 25, 17, 9)
         if vies_brique_6 > 0 :
-            pyxel.rect(10+25+10+25+10+25+10+25+10+25+10, 25, 25, 17, 9)
+            pyxel.rect(10+25+10+25+10+25+10+25+10+25+10, 25, 25, 17, 10)
         if vies_brique_7 > 0 :
-            pyxel.rect(10+25+10+25+10+25+10+25+10+25+10+25+10, 25, 25, 17, 9)
+            pyxel.rect(10+25+10+25+10+25+10+25+10+25+10+25+10, 25, 25, 17, 8)
 
  
 #fin
