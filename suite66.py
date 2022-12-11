@@ -192,7 +192,27 @@ def draw():
         elif 25 <= balle_y <= 50 and 10+25+10+25+10  <= balle_x <= 10+25+10+1+25+10  and vies_brique_4 > 0 :
             vies_brique_4 = vies_brique_4 - 1
             deplacement_vertical = 1 #-1
+    #brique_y5
+   
+    
+        if 25 <= balle_y <= 27 and 10+25+10+25+10+25+10+25+10 <= balle_x <= 10+25+10+25+10+26+25+10+25+10 and vies_brique_5 > 0 :
+            vies_brique_5 = vies_brique_5 - 1
+            deplacement_vertical = 1 #-1
 
+        elif 25 + 17 <= balle_y <= 25+17+3 and 10+25+10+25+10+25+10+25+10  < balle_x < 10+25+10+25+10+26+25+10+25+10  and vies_brique_5 > 0 :
+            vies_brique_5 = vies_brique_5 - 1
+            deplacement_vertical = -1 #1
+
+            
+    #brique_x5
+        
+        if 25 <= balle_y <= 50 and 10+25+10+25+10+25+10+25+10 <= balle_x <= 10+25+10+1+25+10+25+10+25+10  and vies_brique_5 > 0 :
+            vies_brique_5 = vies_brique_5 - 1
+            deplacement_vertical = 1 #-1
+
+        elif 25 <= balle_y <= 50 and 10+25+10+25+10+25+10+25+10  <= balle_x <= 10+25+10+1+25+10+25+10+25+10  and vies_brique_5 > 0 :
+            vies_brique_5 = vies_brique_5 - 1
+            deplacement_vertical = 1 #-1
 
     
     
